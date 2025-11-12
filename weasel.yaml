@@ -20,7 +20,7 @@ app_options:
     inline_preedit: true # 兼容 Yandex
 
 # [global settings]
-show_notifications: true                   # 是否显示状态变化的通知：true；false；option_list（方案内的开头 option）
+show_notifications: false                  # 是否显示状态变化的通知：true；false；option_list（方案内的开头 option）
 show_notifications_time: 1200              # 通知显示的时间，单位 ms
 global_ascii: false                        # 切换为 ascii 模式时，是否影响所有窗口：true；false
 # [End of <global settings>]
@@ -28,27 +28,27 @@ global_ascii: false                        # 切换为 ascii 模式时，是否�
 # [style]
 # 字体；候选项、候选窗口的行为、布局及样式
 style:
-  color_scheme: mint_light_blue             # 默认配色方案
-  color_scheme_dark: mint_dark_blue         # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
+  color_scheme: steam                      # 默认配色方案
+  # color_scheme_dark: mint_dark_blue         # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
 
   # 全局字体
   # 格式：字体1:起始码位:结束码位:字重:字形,字体2……，字体会依次 fallback
   # 详细设定请参考 <https://github.com/rime/weasel/wiki/字體設定>
-  font_face: "Segoe UI Emoji:30:39, Segoe UI Emoji:23:23, Segoe UI Emoji:2a:2a, Segoe UI Emoji:fe0f:fe0f, Segoe UI Emoji:20e3:20e3, Microsoft YaHei, SF Pro, Segoe UI Emoji, Noto Color Emoji"
-  label_font_face: "Microsoft YaHei"       # 标签字体
-  comment_font_face: "Microsoft YaHei"     # 注释字体
+  font_face: "MiSans, MiSans L3, Segoe UI Emoji:30:39, Segoe UI Emoji:23:23, Segoe UI Emoji:2a:2a, Segoe UI Emoji:fe0f:fe0f, Segoe UI Emoji:20e3:20e3, Microsoft YaHei, SF Pro, Segoe UI Emoji, Noto Color Emoji"
+  label_font_face: "Fira Code"             # 标签字体
+  comment_font_face: "MiSans, MiSans L3"   # 注释字体
   font_point: 12                           # 全局字体字号
   label_font_point: 12                     # 标签字体字号，不设定 fallback 到 font_point
-  comment_font_point: 10                   # 注释字体字号，不设定 fallback 到 font_point
+  comment_font_point: 12                   # 注释字体字号，不设定 fallback 到 font_point
 
-  inline_preedit: false                     # 行内显示预编辑区：true；false
+  inline_preedit: true                     # 行内显示预编辑区：true；false
   preedit_type: composition                # 预编辑区内容：composition（编码）； preview（选中的候选）；preview_all（全部候选）
   
   fullscreen: false                        # 候选窗口全屏显示：true；false
   vertical_text: false                     # 竖排文本：true；false
   # text_orientation: horizontal           # 文本排列方向，效果和 `vertical_text` 相同：horizontal；vertical
   candidate_list_layout: stacked           # stacked | linear  候选项排列方向（小狼毫可能没有这个参数；如果需要修改为水平布局，可以在custom文件内修改horizontal为true）
-  horizontal: false                        # 候选项水平排列（在custom内和candidate_list_layout的linear效果一样）
+  horizontal: true                         # 候选项水平排列（在custom内和candidate_list_layout的linear效果一样）
   vertical_text_left_to_right: false       # 竖排方向是否从左到右：true；false
   vertical_text_with_wrap: false           # 文本竖排模式下，自动换行：true；false
   vertical_auto_reverse: false             # 文本竖排模式下，候选窗口位于光标上方时倒序排列：true；false
@@ -85,7 +85,7 @@ style:
     shadow_radius: 0                       # 阴影区域半径，为 0 不显示阴影；需要同时在配色方案中指定非透明的阴影颜色
     shadow_offset_x: 4                     # 阴影左右偏移距离
     shadow_offset_y: 4                     # 阴影上下偏移距离
-    corner_radius: 8                       # 候选窗口圆角半径
+    corner_radius: 5                       # 候选窗口圆角半径
     round_corner: 8                        # 候选背景色块圆角半径，又名 hilited_corner_radius
     # type: vertical                       # 布局设置，效果和 style 下的设置相同：
                                            # horizontal（横向）；vertical（竖向） ; vertical_text（竖排文本） ; vertical+fullscreen（全屏） ; horizontal+fullscreen（横向全屏）
