@@ -7,7 +7,7 @@ use_preset_vocabulary: false
 # 雾凇拼音词库，由Github Robot自动更新
 import_tables:
   - dicts/custom_simple          # 自定义
-  - dicts/moegirl                # 萌娘百科词库
+  - dicts/tone_moe               # 改萌娘百科词库(moetype)
   - dicts/zhwiki                 # 中文维基百科词库
   - dicts/cn_medicine_list_tiny  # 中英医学词库 - 西药词库(精简)
   - dicts/cn_tcm_patent          # 中英医学词库 - 中成药词库
